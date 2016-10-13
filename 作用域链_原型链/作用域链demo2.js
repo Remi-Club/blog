@@ -28,3 +28,6 @@ console.log('currentCount2:', currentCount);
 
 currentCount = man.display();
 console.log('currentCount3:', currentCount);
+
+currentCount = man.display();
+console.log('currentCount4:', currentCount);

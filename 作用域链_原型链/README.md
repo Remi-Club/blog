@@ -26,9 +26,12 @@
 ###代码执行的三个概念
 *	执行环境, 负责维护作用域链和活动对象
 
-*	作用域链, 指向变量对象的一个链表
+*	作用域链, 指向变量对象的一个链表;保证执行环境有权访问的所有变量和函数能被有序访问；作用域链的最前端始终是当前执行环境的变量对象(活动对象)
 
 *	变量对象(活动对象), 包含执行过程中产生的变量
+
+**函数执行完后, 当前的执行环境和作用域链会被销毁, 不论是否有闭包的存在**
+
 
 ###作用域链demo1
 ```
@@ -76,6 +79,9 @@ console.log('currentCount2:', currentCount);
 
 currentCount = man.display();
 console.log('currentCount3:', currentCount);
+
+currentCount = man.display();
+console.log('currentCount4:', currentCount);
 ```
 
 ##原型链
