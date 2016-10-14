@@ -17,12 +17,13 @@ void setState(){
 setState({mykey: 'my new value'});
 ```
 当第一个参数是函数时,它的签名是`function(state, props)`.这个在需要参照先前的state和props的值进行更精细的更新处理时很有用.下面这个例子,假设想要累加state的的一个值:
+
 ```
 setState(function(previousState, currentProps) {
   return {myInteger: previousState.myInteger + 1};
 });
 ```
-第二个参数可选,是一个回调函数, 一旦`setState`被完成并且组件被渲染更新(DidUpdate执行了)后, 该回调函数才被执行.
+第二个参数可选,是一个回调函数, 一旦`setState`被完成并且组件被渲染更新(`componentDidUpdate`执行了)后, 该回调函数才被执行.
 ####备注
 >不要直接改变`this.state`,把它当做一个不可变的对象.只通过`setState`去做改变.	
 >
