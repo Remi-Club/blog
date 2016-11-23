@@ -216,7 +216,7 @@ HTTP + 加密 + 认证 + 完整性保护 = HTTPS
 
 HTTPS并非一种新的协议，只是HTTP通信接口部分用SSL和TLS协议代替而已
 ### 通信机制
-![HTTPS通信机制](/Users/wangpu/Desktop/http分享/https通信机制.jpeg)
+![HTTPS通信机制](./images/https通信机制.jpeg)
 图中简述了HTTPS的通信步骤，具体分为以下：
 
 1. 客户端通过发送Client Hello报文开始SSL通信。报文中包含客户端支持的SSL的制定版本、加密组件列表(加密算法，密钥长度等)；
@@ -233,7 +233,7 @@ HTTPS并非一种新的协议，只是HTTP通信接口部分用SSL和TLS协议�
 12. 最后由客户端断开连接。断开连接时，发送close_notify报文。这步之后再发送TCP FIN报文来关闭与TCP的通信。
 
 下图是从仅使用服务器端的公开密钥证书(服务器证书)建立HTTPS通信的整个过程的图解。
-![HTTPS通信的全过程](/Users/wangpu/Desktop/http分享/HTTPS整体流程图.jpeg)
+![HTTPS通信的全过程](./images/HTTPS整体流程图.jpeg)
 ### 问题
 1. 即当使用SSL时，它的处理速度会变慢。SSL的慢分两种。一种是通信慢，另一种是指由于大量消耗CPU及内存等资源，导致处理速度变慢。和使用HTTP相比，网络负载可能会变慢2到100倍。
 2. SSL必须进行加密处理。在服务器和客户端都需要进行加密和解密的运算处理，这样会比HTTP更多地消耗服务器和客户端的硬件资源，导致负载增强。
