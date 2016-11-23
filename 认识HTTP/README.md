@@ -164,6 +164,7 @@ Cookie会根据从服务器端发送的响应报文内的一个叫做Set-Cookie�
 - Upgrade :升级为其他协议
 - Via :代理服务器的相关信息
 - Warning :错误通知
+
 #### 请求首部字段
 - Accept :用户代理可处理的媒体类型
 - Accept-Charset :优先的字符集
@@ -184,6 +185,7 @@ Cookie会根据从服务器端发送的响应报文内的一个叫做Set-Cookie�
 - Referer :对请求中URI的原始获取方
 - TE :传输编码的优先级
 - User-Agent :HTTP客户端程序的信息
+
 #### 响应首部字段
 - Accept-Ranges :是否接受字节范围请求
 - Age :推算资源创建经过时间
@@ -194,6 +196,7 @@ Cookie会根据从服务器端发送的响应报文内的一个叫做Set-Cookie�
 - Server :HTTP服务器的安装信息
 - Vary :代理服务器缓存的管理信息
 - WWW-Authenticate :服务器对客户端的认证信息
+
 #### 实体首部字段
 - Allow :资源可支持的HTTP方法
 - Content-Encoding :实体主体适用的编码方式
@@ -215,6 +218,7 @@ Cookie会根据从服务器端发送的响应报文内的一个叫做Set-Cookie�
 HTTP + 加密 + 认证 + 完整性保护 = HTTPS
 
 HTTPS并非一种新的协议，只是HTTP通信接口部分用SSL和TLS协议代替而已
+
 ### 通信机制
 ![HTTPS通信机制](./images/https通信机制.jpeg)
 图中简述了HTTPS的通信步骤，具体分为以下：
