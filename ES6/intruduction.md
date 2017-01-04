@@ -5,7 +5,7 @@
 
 ##特性
 ###箭头函数
-函数的简洁写法, 有类似特性的的语言有:C#,Java8和CoffeeScript.
+函数的简洁写法, 有类似特性的的语言:C#,Java8和CoffeeScript.
 
 ```
 // Expression bodies
@@ -125,7 +125,7 @@ function f(x, ...y) {
 
 f(3, "hello", true) == 6
 
-let {x, y, …z} = {x:1, y:2, a:3, b:4};
+let {x, y, ...z} = {x:1, y:2, a:3, b:4};
 x//1
 y//2
 z//{a:3, b:4}
@@ -145,7 +145,7 @@ function f(x, y, z) {
 f(...[1,2,3]) == 6
 
 let z = {a:3, b:4};
-let n = {…z}
+let n = {...z}
 n//{a:3, b:4}
 等同于
 let n = Object.assign({}, z);
@@ -189,9 +189,12 @@ if(true){
 ```
 
 ###Symbols
-第七种数据类型,是唯一的;
+第七种数据类型,表示独一无二的值;
 
 ```
+//typeof
+typeof Symbol(); //symbol
+
 // 没有参数的情况
 var s1 = Symbol();
 var s2 = Symbol();
@@ -206,10 +209,11 @@ s1 === s2 // false
 ```
 
 ###Map + Set + WeakMap + WeakSet
-Set: 不重复的数组
-WeakSet:成员只能是对象
-Map: key可以是任意数据类型
-WeakMap:key只能是对象,null除外
+
+- Set: 不重复的数组
+- WeakSet:成员只能是对象
+- Map: key可以是任意数据类型
+- WeakMap:key只能是对象,null除外
 
 ```
 // Sets
@@ -360,3 +364,7 @@ export default function(x) {
 import exp, {pi, e} from "lib/mathplusplus";
 alert("2π = " + exp(pi, e));
 ```
+
+##参照
+- [ES6标准入门](http://es6.ruanyifeng.com/) 
+- [Babel 学习ES6](http://babeljs.cn/docs/learn-es2015/#binary-and-octal-literals)
