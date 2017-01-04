@@ -152,10 +152,10 @@ let n = Object.assign({}, z);
 ```
 
 ###let + const
-支持块作用域;
-不存在变量提升;
-不允许重复声明;
-暂时性死区(temporal dead zone, TDZ): 使用let命令声明变量之前,该变量是不可用的.
+- 支持块作用域;
+- 不存在变量提升;
+- 不允许重复声明;
+- 暂时性死区(temporal dead zone, TDZ): 使用let命令声明变量之前,该变量是不可用的.
 
 ```
 function f() {
