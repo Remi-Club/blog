@@ -1,6 +1,6 @@
-#MVC模式介绍和实践
+# MVC模式介绍和实践
 
-##MVC定义
+## MVC定义
 - 视图(View)
 - 控制器(Controller)
 - 模型(Model)
@@ -8,31 +8,31 @@
 > 是最常见的软件架构之一, 类似的还有(MVP, MVVM);
 
 
-##为什么会有MVC?
+## 为什么会有MVC?
 
 **解决软件复杂度的问题;**
 基于MVC,实现对软件的分层;
 
-##MVC模式是否是固定的?
+## MVC模式是否是固定的?
 
 不是;
 
 区分场景, 典型的前端,后端对MVC的实现有区别;
 
-###前端更偏重View
+### 前端更偏重View
 
 ![mvc_front](./assets/mvc1.png)
 
-###后端更偏重Model
+### 后端更偏重Model
 
 ![mvc_back](./assets/mvc2.png)
 
-##MVP
+## MVP
 
 Model-View-Presenter, 主持人
 ![mvp](./assets/mvp.png)
 
-##MVVM
+## MVVM
 
 Model-View-ViewModel
 ![mvvm](./assets/mvvm.png)
@@ -43,9 +43,9 @@ Model-View-ViewModel
 
 > 关键区别:是否有数据的双向绑定;
 
-##目前前端项目对MVC的应用
+## 目前前端项目对MVC的应用
 
-###redux
+### redux
 
 设计思想:
 
