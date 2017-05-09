@@ -30,11 +30,13 @@
 ## MVP
 
 Model-View-Presenter, 主持人
+
 ![mvp](./assets/mvp.png)
 
 ## MVVM
 
 Model-View-ViewModel
+
 ![mvvm](./assets/mvvm.png)
 
 - 各部分之间的通信,都是双向的;
