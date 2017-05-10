@@ -70,6 +70,7 @@ Model-View-ViewModel
 - 和后端约定`业务对象`, 比如`金刚狼项目`有:user, staff, company, room, meeting, summary, message;
 - View层命名规则: 业务对象名词 + 名词或动词(一个或多个);
 - 维护一个`View对照表`, 保持各端项目的统一;
+- 接口式思维: 组件propTypes; 注释;
 
 
 
