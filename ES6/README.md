@@ -1,10 +1,10 @@
-#ES6介绍
-##什么是ES6?
+# ES6介绍
+## 什么是ES6?
 `ES6`, 在2000年开始酝酿,那时叫ecmascript4, 因为太激进, 后来演变成`ecmascript5`(`ES5`)[09年发布], 和现在的`ecmascript6`(`ES6`);
 在2015年正式推出, 使用年份命名版本,所以有名 `ES2015`=`ES6`;
 
-##特性
-###箭头函数
+## 特性
+### 箭头函数
 函数的简洁写法, 有类似特性的的语言:C#,Java8和CoffeeScript.
 
 ```
@@ -29,7 +29,7 @@ var bob = {
 };
 ```
 
-###class/extends
+### class/extends
 用面向对象模式编程的语法糖.
 
 ```
@@ -52,7 +52,7 @@ class SkinnedMesh extends THREE.Mesh {
 }
 ```
 
-###增强的对象字面量
+### 增强的对象字面量
 
 ```
 var obj = {
@@ -69,7 +69,7 @@ var obj = {
 };
 ```
 
-###模板字符串
+### 模板字符串
 构造字符串的语法糖. 有类似特性的语言有:Perl,Python
 
 ```
@@ -82,7 +82,7 @@ var name = "Bob", time = "today";
 `Hello ${name}, how are you ${time}?`
 ```
 
-###解构赋值
+### 解构赋值
 简化赋值语法. fail-soft(工作可靠但性能下降)
 
 ```
@@ -102,7 +102,7 @@ var {op, lhs, rhs} = getASTNode()
 
 ```
 
-###默认值
+### 默认值
 
 ```
 function f(x, y=12) {
@@ -112,7 +112,7 @@ function f(x, y=12) {
 f(3) == 15
 ```
 
-###Rest参数
+### Rest参数
 - 数组,绑定尾部的参数到一个数组. 替代 `arguments`
 - 对象,绑定其他的成员变量到一个对象.(ES7)
 
@@ -131,7 +131,7 @@ y//2
 z//{a:3, b:4}
 ```
 
-###扩展运算符(...)
+### 扩展运算符(...)
 - 数组, 将数组扩展展开成序列.
 - 对象, 将对象扩展展开到新的对象.(ES7)
 
@@ -151,7 +151,7 @@ n//{a:3, b:4}
 let n = Object.assign({}, z);
 ```
 
-###let + const
+### let + const
 - 支持块作用域;
 - 不存在变量提升;
 - 不允许重复声明;
@@ -188,7 +188,7 @@ if(true){
 }
 ```
 
-###Symbols
+### Symbols
 第七种数据类型,表示独一无二的值;
 
 ```
@@ -208,7 +208,7 @@ var s2 = Symbol('foo');
 s1 === s2 // false
 ```
 
-###Map + Set + WeakMap + WeakSet
+### Map + Set + WeakMap + WeakSet
 
 - Set: 不重复的数组
 - WeakSet:成员只能是对象
@@ -239,7 +239,7 @@ wm.size === undefined
 
 ```
 
-###Proxy
+### Proxy
 属于”元编程”(meta programming),即对编程语言进行编程.
 用于修改某些操作的默认行为,等同于在语言层面做出修改.
 
@@ -258,11 +258,11 @@ var obj = new Proxy({}, {
 >不能被转化或polyfill, 需要javascript engine支持
 
 
-###Reflect
+### Reflect
 暴露运行时对象的元操作,
 配合Proxy使用;
 
-###Iterators + For..Of
+### Iterators + For..Of
 遍历器（Iterator）它是一种接口，为各种不同的数据结构提供统一的访问机制。任何数据结构只要部署Iterator接口，就可以完成遍历操作（即依次处理该数据结构的所有成员）
 
 Iterator接口主要供for...of消费
@@ -279,7 +279,7 @@ for (let a of arr) {
 }
 ```
 
-###Generator
+### Generator
 一种异步编程解决方案.
 
 Generator函数,内部可封装n个内部状态,返回一个可以遍历的状态机对象.
@@ -309,7 +309,7 @@ hw.next()
 // { value: undefined, done: true }
 ```
 
-###Promise
+### Promise
 一种异步编程的解决方案.
 
 所谓`Promise`，简单说就是一个容器，里面保存着某个未来才会结束的事件（通常是一个异步操作）的结果.
@@ -331,7 +331,7 @@ var promise = new Promise(function(resolve, reject) {
 });
 ```
 
-###Modules
+### Modules
 模块管理方案,完全可以替代之前的CommonJS, AMD方案.
 
 ```
@@ -365,6 +365,6 @@ import exp, {pi, e} from "lib/mathplusplus";
 alert("2π = " + exp(pi, e));
 ```
 
-##参照
+## 参照
 - [ES6标准入门](http://es6.ruanyifeng.com/) 
 - [Babel 学习ES6](http://babeljs.cn/docs/learn-es2015/#binary-and-octal-literals)
